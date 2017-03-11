@@ -4,7 +4,7 @@
 	app.config(function ($routeProvider) {
             $routeProvider
                 .when("/landing", {
-                    templateUrl: "FieldCareApp/LandingPage.html"
+                    templateUrl: "FieldCareApp/LandingPage.html",
 					controller: 'LandingController',
                     controllerAs: 'ctrl'
                 })
