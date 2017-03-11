@@ -1,7 +1,7 @@
 (function(){
 	'use strict'
 	var app = angular.module('FarmCare');
-	app.controller('LandingController', function($location)
+	app.controller('LandingController', ['$location', function($location)
 	{
 		vm = this
 		
@@ -10,5 +10,5 @@
 		function getToOwnerPage(){
 			$location.path('');
 		}
-	});
+	}]);
 })();
