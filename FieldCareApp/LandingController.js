@@ -6,14 +6,9 @@
 		var vm = this
 		
 		vm.getToAddPage = getToAddPage;
-		vm.getToFarmerPage = getToFarmerPage;
 		
-		function getToOwnerPage(){
-			$location.path('/ownerlist');
-		}
-
-		function getToFarmerPage(){
-			$location.path('/farmerlist');
+		function getToAddPage(){
+			$location.path('/addfield');
 		}
 	}]);
 })();
