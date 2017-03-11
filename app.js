@@ -1,5 +1,18 @@
 (function(){
-	var app = angular.module('FarmCare', [])
+	'use strict'
+	var app = angular.module('FarmCare', ['ngRoute', 'ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages'])
+	app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/landing", {
+                    templateUrl: "FieldCareApp/LandingPage.html"
+                })
+                .when("/main", {
+                    templateUrl: "FieldCareApp/MainPage.html",
+                    controller: 'MainController',
+                    controllerAs: 'ctrl'
+                })
+		        .otherwise({ redirectTo: "/landing" });
+	});
 	app.controller('MainController', function()
 	{
 		vm = this
