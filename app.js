@@ -8,23 +8,11 @@
 					controller: 'LandingController',
                     controllerAs: 'ctrl'
                 })
-                .when("/ownerlist", {
-                    templateUrl: "FieldCareApp/OwnerListPage.html",
-                    controller: 'MainController',
+                .when("/addfield", {
+                    templateUrl: "FieldCareApp/AddingPage.html",
+                    controller: 'AddingController',
                     controllerAs: 'ctrl'
                 })
 		        .otherwise({ redirectTo: "/landing" });
-	});
-	app.controller('MainController', function()
-	{
-		vm = this
-		vm.nume = "Solovjov Maksim"
-		vm.limba = "Russian Female"
-		
-		vm.Speak = Speak
-		
-		function Speak(){
-			responsiveVoice.speak(vm.nume, vm.limba);
-		}
 	});
 })();

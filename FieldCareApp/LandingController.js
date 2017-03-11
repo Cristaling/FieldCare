@@ -5,10 +5,15 @@
 	{
 		var vm = this
 		
-		vm.getToOwnerPage = getToOwnerPage
+		vm.getToAddPage = getToAddPage;
+		vm.getToFarmerPage = getToFarmerPage;
 		
 		function getToOwnerPage(){
 			$location.path('/ownerlist');
+		}
+
+		function getToFarmerPage(){
+			$location.path('/farmerlist');
 		}
 	}]);
 })();
