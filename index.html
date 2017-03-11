@@ -1,0 +1,14 @@
+<html ng-app = "FarmCare">
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<body ng-controller = "MainController as ctrl">
+		<input type='text' ng-model='ctrl.nume'></input>
+		<input type='text' ng-model='ctrl.limba'></input>
+		<div class='btn btn-primary' ng-click='ctrl.Speak()'>Play</div>
+	</body>
+	<footer>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"> </script>
+		<script src = "app.js"> </script>
+	</footer>
+</html>
