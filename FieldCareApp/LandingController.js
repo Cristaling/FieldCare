@@ -8,7 +8,7 @@
 		vm.getToOwnerPage = getToOwnerPage
 		
 		function getToOwnerPage(){
-			$location.path('');
+			$location.path('/ownerlist');
 		}
 	}]);
 })();

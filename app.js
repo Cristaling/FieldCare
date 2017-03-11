@@ -8,7 +8,7 @@
 					controller: 'LandingController',
                     controllerAs: 'ctrl'
                 })
-                .when("/owner", {
+                .when("/ownerlist", {
                     templateUrl: "FieldCareApp/OwnerListPage.html",
                     controller: 'MainController',
                     controllerAs: 'ctrl'
