@@ -1,4 +1,4 @@
-function(){
+(function(){
 	var app = angular.module('FarmCare', [])
 	app.controller('MainController', function()
 	{
@@ -12,4 +12,4 @@ function(){
 			responsiveVoice.speak(vm.nume, vm.limba);
 		}
 	});
-}();
+})();
