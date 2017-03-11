@@ -3,7 +3,7 @@
 	var app = angular.module('FarmCare');
 	app.controller('LandingController', ['$location', function($location)
 	{
-		vm = this
+		var vm = this
 		
 		vm.getToOwnerPage = getToOwnerPage
 		
