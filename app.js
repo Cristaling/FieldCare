@@ -1,13 +1,15 @@
 (function(){
 	'use strict'
-	var app = angular.module('FarmCare', ['ngRoute', 'ngAnimate', 'ngAria', 'ngMaterial', 'ngMessages'])
+	var app = angular.module('FarmCare', ['ngRoute', 'ngAnimate', 'ngCookies', 'ngAria', 'ngMaterial', 'ngMessages'])
 	app.config(function ($routeProvider) {
             $routeProvider
                 .when("/landing", {
                     templateUrl: "FieldCareApp/LandingPage.html"
+					controller: 'LandingController',
+                    controllerAs: 'ctrl'
                 })
-                .when("/main", {
-                    templateUrl: "FieldCareApp/MainPage.html",
+                .when("/owner", {
+                    templateUrl: "FieldCareApp/OwnerListPage.html",
                     controller: 'MainController',
                     controllerAs: 'ctrl'
                 })
