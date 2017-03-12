@@ -22,6 +22,7 @@
 			vm.fields = vm.fields.filter(function(el) {
 				return el !== field;
 			});
+			$cookies.putObject('FieldsToCare', vm.fields);
 		}
 	}]);
 })();
