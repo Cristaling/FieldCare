@@ -1,3 +1,19 @@
-<div class='container'>
-	<div class='btn btn-primary' ng-click='ctrl.getToAddPage()'>Adauga un teren agricol</div>
+<div class="container" style="padding-top: 50px">
+	<div class="col-md-offset-3 col-md-6 btn btn-lg btn-farm" ng-click="ctrl.getToAddPage()">Adauga un teren agricol</div>
+	<div class="col-md-offset-2 col-md-8" style="margin-top: 50px; font-size: 3em;">
+		<input class="col-md-12" ng-model="ctrl.townSearch" placeholder="Cauta dupa oras">
+	</div>
+	<div class="col-md-12" style="margin-top: 50px">
+		<div class="col-md-4" ng-repeat="field in ctrl.fields | filter:{town: ctrl.townSearch}">
+			<div class="panel panel-farm">
+				<div class="panel-heading" ng-click="ctrl.removeField(field)">
+					{{field.name}} ({{field.area}}Ha)
+				</div>
+				<div class="panel-body">
+					{{field.phone}}
+					{{field.town}}
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

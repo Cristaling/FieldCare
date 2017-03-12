@@ -1,13 +1,31 @@
-<div layout="column" class="zero">
-
-  <div flex="33" class="one">1</div>
-  <div flex="33" layout="column" class="two">
-
-    <div flex="20" flex-md="10" hide-lg class="two_one">2</div>
-    <div flex="30px" show flex-md="25" class="two_two">3</div>
-    <div flex="20" flex-md="65" class="two_three">4</div>
-
-  </div>
-  <div flex class="three">5</div>
-
+<div class="container" style="padding-top: 10%">
+	<div class="col-md-6 col-md-offset-3">
+		<div class="panel panel-farm">
+			<div class="panel-heading">
+				Adauga un teren agricol
+			</div>
+			<div class="panel-body">
+				<md-input-container class="md-block">
+		            <label>Nume</label>
+		            <input ng-model="ctrl.entry.name" required></input>
+	          	</md-input-container>
+	          	<md-input-container class="md-block">
+	          		<label>Numar de Telefon</label>
+					<input ng-model="ctrl.entry.phone" required ng-pattern="/^[0-9]{10}$/" md-maxlength="10"></input>
+	   			</md-input-container>
+	   			<md-input-container class="md-block">
+	          		<label>Localitate</label>
+					<input ng-model="ctrl.entry.town" required></input>
+	   			</md-input-container>
+	   			<md-input-container class="md-block" flex-gt-sm>
+		            <label>Suprafata Terenului (Hectare)</label>
+		            <input ng-model="ctrl.entry.area" placeholder="100"
+		                   required ng-pattern="/^[0-9]/">
+	          	</md-input-container>
+	          	<div class="col-md-6 col-md-offset-3 btn btn-lg btn-farm" ng-click='ctrl.Adauga()'>
+					Adauga
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

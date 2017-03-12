@@ -1,0 +1,32 @@
+body {
+    min-height: 100%;
+    height: auto;
+    background-image: url("https://images5.alphacoders.com/415/thumb-1920-415977.jpg");
+    background-attachment: fixed;
+}
+
+.btn-farm{
+    color: white;
+    background-color: #ba6c23;
+    border-color: #aa5c13;
+    text-align: center;
+}
+
+md-checkbox.md-default-theme.md-checked .md-ink-ripple, md-checkbox.md-checked .md-ink-ripple {
+    color: #ba6c23;
+}
+
+md-checkbox.md-default-theme.md-checked .md-icon, md-checkbox.md-checked .md-icon {
+    background-color: #ba6c23;
+}
+
+.panel-farm{
+    border-color: #ba6c23;
+}
+
+.panel-farm .panel-heading{
+    color: white;
+    background-color: #ba6c23;
+    border-color: #ba6c23;
+    font-size: 1.5em;
+}
